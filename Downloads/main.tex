@@ -1,0 +1,60 @@
+\documentclass[11pt, letterpaper]{article}
+\usepackage{graphicx} 
+\usepackage{minted}
+\usepackage{xcolor}
+\title{Lab 1}
+\author{Tran Ngoc Vu}
+
+\date{June 2023}
+
+\begin{document}
+
+\maketitle
+
+\section{\Large \textbf{Introduction}}
+\subsection{Download and install all the items in the requirements.}
+\subsection{Check the installation is correct.}
+\subsection{Register project using the link on Classroom.}
+\subsection{Based on the project topic, write a feasibility study on Overleaf.}
+\subsection{Think about the requirement of the project.}
+\subsection{Write a function in Java or Python to compute sum of two number. Then print, out the result.}
+\begin{minted}{python}
+    def sum_two_numbers():
+        x = input("Enter the first number: ")
+        y = input("Enter the second number: ")
+        sum = int(x) + int(y)
+        print("The sum of two numbers is: ", sum)
+    sum_two_numbers()
+\end{minted}
+\subsection{Write a function in Java or Python to print out all elements in an array.}
+\begin{minted}{python}
+    def  print_array():
+    def print_elements(array):
+        print("Array elements:")
+        for element in array:
+         print(element)
+    my_array = [1, 2, 3, 4, 5]
+    print_elements(my_array)
+\end{minted}
+\subsection{Write a function in Java or Python to print out the maximum elements in an array.}
+\begin{minted}{python}
+    def print_max_element(array):
+        max_element = max(array)
+        print("Maximum element in the array:", max_element)
+    my_array = [5, 8, 2, 10, 3]
+    print_max_element(my_array)
+\end{minted}
+\subsection{Write a function in Java or Python to sort an array using bubble sort or selection sort.}
+\begin{minted}{python}
+    def bubble_sort(array):
+        n = len(array)
+        for i in range(n):
+            for j in range(0, n - i - 1):
+                if array[j] > array[j + 1]:
+                    array[j], array[j + 1] = array[j + 1], array[j]
+    my_array = [64, 34, 25, 12, 22, 11, 90]
+    bubble_sort(my_array)
+    print("Sorted array:", my_array)
+\end{minted}
+\subsection{Commit to GIT 1.11. In the java file that have the sum function. Add a subtract function and commit to GIT again.}
+\end{document}
